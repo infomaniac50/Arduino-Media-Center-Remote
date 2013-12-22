@@ -67,7 +67,7 @@ void setup()
   Serial.println(F("Go Code Received"));
   #endif
 
-  rawBuffer = static_cast<char*>((void*)(&packet));
+  rawBuffer = (char*)&packet;
   pinMode(SS, OUTPUT);
 
   #ifdef NODHCP
