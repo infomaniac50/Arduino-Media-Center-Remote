@@ -1,0 +1,107 @@
+#
+# this config file was automatically generated
+# using lirc-0.6.6(serial) on Fri Dec 27 18:38:17 2002
+#
+# contributed by Joakim Mared <joakim at bfcom dot se>
+#
+# brand:                       PHILIPS
+# model no. of remote control: U352
+# devices being controlled by this remote:
+#
+#	Philips TVs & VCRs (shipped with a VR 630 VCR)
+#
+
+begin remote
+
+  name  PHILIPS_U352_VCR_MODE
+  bits           13
+  flags RC5|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  one           840   945
+  zero          840   945
+  plead         827
+  gap          114168
+  min_repeat      1
+  toggle_bit      2
+
+
+      begin codes
+          EJECT                    0x000000000000116D
+          STANDBY                  0x000000000000114C
+          MENU                     0x000000000000115D
+          STATUS_EXIT              0x000000000000114F
+          CLEAR                    0x0000000000001171
+          1                        0x0000000000001141
+          2                        0x0000000000001142
+          3                        0x0000000000001143
+          4                        0x0000000000001144
+          5                        0x0000000000001145
+          6                        0x0000000000001146
+          7                        0x0000000000001147
+          8                        0x0000000000001148
+          9                        0x0000000000001149
+          0                        0x0000000000001140
+          RECORD_OTR               0x0000000000001177
+          STILL                    0x0000000000001169
+          PLAY                     0x0000000000001175
+          REWIND                   0x0000000000001172
+          FASTFORWARD              0x0000000000001174
+          STOP                     0x0000000000001176
+          PROG_UP                  0x0000000000001160
+          PROG_DOWN                0x0000000000001161
+          VOL_UP                   0x0000000000001010
+          VOL_DOWN                 0x0000000000001011
+          MUTE                     0x000000000000100D
+          TURBO_TIMER              0x000000000000115C
+          INDEX                    0x0000000000000170
+          SV_V                     0x0000000000000145
+          SLOW                     0x0000000000001168
+          SYSTEM                   0x000000000000014A
+          AUDIO                    0x0000000000001163
+      end codes
+
+end remote
+
+begin remote
+
+  name  PHILIPS_U352_TV_MODE
+  bits           13
+  flags RC5|CONST_LENGTH
+  eps            30
+  aeps          100
+
+  one           842   943
+  zero          842   943
+  plead         828
+  gap          114168
+  toggle_bit      2
+
+
+      begin codes
+          STANDBY                  0x000000000000100C
+          MENU                     0x000000000000182E
+          STATUS_EXIT              0x000000000000100F
+          1                        0x0000000000001001
+          2                        0x0000000000001802
+          3                        0x0000000000001003
+          4                        0x0000000000001804
+          5                        0x0000000000001005
+          6                        0x0000000000001806
+          7                        0x0000000000001007
+          8                        0x0000000000001808
+          9                        0x0000000000001009
+          0                        0x0000000000001800
+          UP                       0x000000000000101C
+          LEFT                     0x000000000000182C
+          RIGHT                    0x000000000000102B
+          DOWN                     0x000000000000181D
+          PROG_UP                  0x0000000000001020
+          PROG_DOWN                0x0000000000001821
+          VOL_UP                   0x0000000000001010
+          VOL_DOWN                 0x0000000000001811
+          MUTE                     0x000000000000100D
+      end codes
+
+end remote
